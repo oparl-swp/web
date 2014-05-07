@@ -10,6 +10,7 @@ setup(
     ),
     install_requires=[
         'setuptools',
+        'oparlvalidator',
         'psycopg2==2.5.2',
         'django-admin-decorators==0.1',
         'Django==1.6.4',

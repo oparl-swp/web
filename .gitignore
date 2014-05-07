@@ -14,3 +14,4 @@
 !.keep
 /oparlgui/production.py
 supervisord.pid
+/.mr.developer.cfg
