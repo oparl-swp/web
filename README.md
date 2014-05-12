@@ -1,11 +1,17 @@
 # OParl Validator GUI
 
+## Installation
+
+```bash
+python get-pip.py
+pip install Flask
+```
+
 ## Running
 
 ```bash
-python2.7 -S bootstrap.py
-bin/buildout
-bin/django runserver
+pip install Flask
+python app.py
 ```
 
 ## Todo
