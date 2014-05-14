@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <link href="" rel="shortcut icon">
+
+    <title>Validator</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h3>Validator</h3>
+
+                <h3>Test Document</h3>
+
+                <form>
+                    <div class="form-group">
+                        <label for="url">URL</label> <input class=
+                        "form-control" id="url" placeholder="document URL"
+                        value="http://oparl.beispielris.de/bodies/0/meetings/">
+                    </div>
+
+                    <p class="text-center" style="font-weight: bold">- or -</p>
+
+                    <div class="form-group">
+                        <label for="json">JSON</label> 
+                        <textarea class="form-control" id="json" rows="3">
+</textarea>
+                    </div>
+
+                    <div class="radio">
+                        <label><input checked id="optionsRadios1" name=
+                        "optionsRadios" type="radio" value="option1"> Only test
+                        this document</label>
+                    </div>
+
+                    <div class="radio">
+                        <label><input id="optionsRadios2" name="optionsRadios"
+                        type="radio" value="option2"> Follow links until depth
+                        <input style="width:30px" value="1"></label>
+                    </div>
+
+                    <div class="radio">
+                        <label><input checked id="optionsRadios3" name=
+                        "optionsRadios" type="radio" value="option3"> Follow
+                        all links</label>
+                    </div><button class="btn btn-default" type=
+                    "submit">Submit</button>
+                </form>
+
+                <h3>Test System</h3>
+
+                <form>
+                    <div class="form-group">
+                        <label for="url">URL</label> <input class=
+                        "form-control" id="url" placeholder="system URL">
+                    </div>
+
+                    <div class="radio">
+                        <label><input checked id="optionsRadios1" name=
+                        "optionsRadios" type="radio" value="option1"> until
+                        <input style="width:30px" value="3"> documents of every
+                        type are tested</label>
+                    </div>
+
+                    <div class="radio">
+                        <label><input id="optionsRadios2" name="optionsRadios"
+                        type="radio" value="option2"> Test whole System</label>
+                    </div><button class="btn btn-default" type=
+                    "submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="col-md-7">
+                <h3>Result</h3>
+
+                <p class="bg-success">150 of 150 (100%) Documents correct</p>
+
+                <p class="bg-success">10 of 10 (100%) Server requirements
+                satisfied</p>
+
+                <h3>Statistic</h3>
+
+                <table class="table table-condensed table-bordered">
+                    <thead>
+                        <tr>
+                            <th></th>
+
+                            <th>#</th>
+
+                            <th colspan="3">Recommended</th>
+
+                            <th colspan="3">Optional</th>
+							 <th colspan="3">Unspecified</th>
+                        </tr>
+                    </thead>
+
+                    <tr>
+                        <td rowspan="9" style="font-weight: bold">meetings</td>
+
+                        <td rowspan="9">10</td>
+                    </tr>
+
+                    <tr>
+                        <td>end</td>
+
+                        <td>5</td>
+
+                        <td class="success">50%</td>
+
+                        <td>agendaitems</td>
+
+                        <td>10 (avg:8,21)</td>
+
+                        <td class="">100%</td>
+						
+						<td class="">occasion</td>
+						
+						<td class="">10</td>
+						
+						<td class="">100%</td>
+                    </tr>
+
+                    <tr>
+                        <td>location</td>
+
+                        <td>0</td>
+
+                        <td class="danger">0%</td>
+
+                        <td>auxiliaryDocument</td>
+
+                        <td>3</td>
+
+                        <td class="">30%</td>
+						
+												<td class="">public</td>
+						
+						<td class="">10</td>
+						
+						<td class="">100%</td>
+                    </tr>
+
+                    <tr>
+                        <td>invitation</td>
+
+                        <td>0</td>
+
+                        <td class="danger">0%</td>
+
+                        <td>classification</td>
+
+                        <td>0</td>
+
+                        <td>0%</td>
+                    </tr>
+
+                    <tr>
+                        <td>resultsProtocol</td>
+
+                        <td>5</td>
+
+                        <td class="success">50%</td>
+                    </tr>
+
+                    <tr>
+                        <td>verbatimProtocol</td>
+
+                        <td>0</td>
+
+                        <td class="danger">0%</td>
+                    </tr>
+
+                    <tr>
+                        <td>created</td>
+
+                        <td>0</td>
+
+                        <td class="danger">0%</td>
+                    </tr>
+
+                    <tr>
+                        <td>modified</td>
+
+                        <td>0</td>
+
+                        <td class="danger">0%</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="3" style="font-weight: bold">
+                        AgendaItem</td>
+
+                        <td rowspan="3">100</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>public</b></td>
+
+                        <td>50</td>
+
+                        <td class="success">50%</td>
+
+                        <td>number</td>
+
+                        <td>0</td>
+
+                        <td class="">0%</td>
+                    </tr>
+
+                    <tr>
+                        <td>...</td>
+
+                        <td>...</td>
+
+                        <td class="">...</td>
+
+                        <td>...</td>
+
+                        <td>...</td>
+
+                        <td class="">...</td>
+                    </tr>
+
+                    <tr>
+                        <td>...</td>
+
+                        <td>...</td>
+
+                        <td class="">...</td>
+
+                        <td>...</td>
+
+                        <td>...</td>
+
+                        <td class="">...</td>
+
+                        <td class="">...</td>
+
+                        <td class="">...</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
