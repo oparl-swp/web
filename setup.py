@@ -9,20 +9,14 @@ setup(
         test=[],
     ),
     install_requires=[
-        'setuptools',
         'oparlvalidator',
-        'psycopg2==2.5.2',
-        'django-admin-decorators==0.1',
-        'Django==1.6.4',
-        'django-extensions==1.3.3',
-        'gunicorn==18.0',
-        'South==0.8.4',
-        'django-debug-toolbar==1.2',
+        'flask==0.10.1',
         'requests==2.2.1',
-        'python-memcached==1.53',
     ],
     zip_safe=False,
     entry_points={
-        'console_scripts': []
+        'console_scripts': [
+            'flask = oparlgui.app:run',
+        ]
     }
 )

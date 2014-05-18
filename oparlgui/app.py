@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -20,5 +21,5 @@ def validate_post():
 def validate_from_url():
     return 'not implemented yet'
 
-if __name__ == '__main__':
+def run():
     app.run(debug=True) # TODO: remove debugging
